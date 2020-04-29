@@ -22,7 +22,7 @@
     stroke-width: 0.4; }
 
 .gantt .today-highlight {
-  fill: #fcf8e3;
+  fill: #fff2b1;
   opacity: 0.5; }
 
 .gantt .arrow {
@@ -32,21 +32,21 @@
 
 .gantt .bar {
   fill: #b8c2cc;
-  stroke: #8D99A6;
+  stroke: #8d99a6;
   stroke-width: 0;
-  transition: stroke-width .3s ease;
+  transition: stroke-width 0.3s ease;
   user-select: none; }
 
 .gantt .bar-progress {
-  fill: #a3a3ff; }
+  fill: #00a0d2; }
 
 .gantt .bar-invalid {
   fill: transparent;
-  stroke: #8D99A6;
+  stroke: #8d99a6;
   stroke-width: 1;
   stroke-dasharray: 5; }
   .gantt .bar-invalid ~ .bar-label {
-    fill: #555; }
+    fill: #61656b; }
 
 .gantt .bar-label {
   fill: #fff;
@@ -55,7 +55,7 @@
   font-size: 12px;
   font-weight: lighter; }
   .gantt .bar-label.big {
-    fill: #555;
+    fill: #61656b;
     text-anchor: start; }
 
 .gantt .handle {
@@ -63,7 +63,7 @@
   cursor: ew-resize;
   opacity: 0;
   visibility: hidden;
-  transition: opacity .3s ease; }
+  transition: opacity 0.3s ease; }
 
 .gantt .bar-wrapper {
   cursor: pointer;
@@ -71,24 +71,25 @@
   .gantt .bar-wrapper:hover .bar {
     fill: #a9b5c1; }
   .gantt .bar-wrapper:hover .bar-progress {
-    fill: #8a8aff; }
+    fill: #008db9; }
   .gantt .bar-wrapper:hover .handle {
     visibility: visible;
     opacity: 1; }
   .gantt .bar-wrapper.active .bar {
     fill: #a9b5c1; }
   .gantt .bar-wrapper.active .bar-progress {
-    fill: #8a8aff; }
+    fill: #008db9; }
 
-.gantt .lower-text, .gantt .upper-text {
+.gantt .lower-text,
+.gantt .upper-text {
   font-size: 12px;
   text-anchor: middle; }
 
 .gantt .upper-text {
-  fill: #555; }
+  fill: #61656b; }
 
 .gantt .lower-text {
-  fill: #333; }
+  fill: #050505; }
 
 .gantt .hide {
   display: none; }
@@ -106,7 +107,7 @@
     color: #959da5;
     border-radius: 3px; }
     .gantt-container .popup-wrapper .title {
-      border-bottom: 3px solid #a3a3ff;
+      border-bottom: 3px solid #00a0d2;
       padding: 10px; }
     .gantt-container .popup-wrapper .subtitle {
       padding: 10px;

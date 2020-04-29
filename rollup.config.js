@@ -1,13 +1,13 @@
+import merge from 'deepmerge';
 import sass from 'rollup-plugin-sass';
 import uglify from 'rollup-plugin-uglify';
-import merge from 'deepmerge';
 
 const dev = {
     input: 'src/index.js',
     output: {
         name: 'Gantt',
         file: 'dist/frappe-gantt.js',
-        format: 'iife'
+        format: 'es'
     },
     plugins: [
         sass({
@@ -15,6 +15,7 @@ const dev = {
         })
     ]
 };
+
 const prod = merge(dev, {
     output: {
         file: 'dist/frappe-gantt.min.js'
